@@ -5,59 +5,143 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gizlilik Politikası - Mirac-ı Nebi Namaz Vakti</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
-  h1 { color: #1a1a2e; border-bottom: 2px solid #1a1a2e; padding-bottom: 10px; }
-  h2 { color: #16213e; margin-top: 30px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; background: #f5f5f5; color: #333; }
+  .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+  header { background: #1a1a2e; color: white; padding: 40px 20px; text-align: center; }
+  header h1 { font-size: 28px; margin-bottom: 8px; }
+  header p { color: #aab; font-size: 14px; }
+  .card { background: white; border-radius: 8px; padding: 30px; margin: 20px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  h2 { color: #1a1a2e; font-size: 18px; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #e8e8e8; }
+  p { line-height: 1.7; margin-bottom: 12px; font-size: 15px; }
+  ul { padding-left: 20px; margin-bottom: 12px; }
+  li { line-height: 1.8; font-size: 15px; margin-bottom: 4px; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+  th { background: #1a1a2e; color: white; padding: 10px 14px; text-align: left; }
+  td { padding: 10px 14px; border-bottom: 1px solid #eee; vertical-align: top; }
+  tr:nth-child(even) td { background: #f9f9f9; }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .badge { display: inline-block; background: #e8f0fe; color: #1a56db; font-size: 12px; padding: 2px 8px; border-radius: 12px; margin-left: 6px; }
+  .highlight { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 14px 0; font-size: 14px; }
+  footer { text-align: center; color: #888; font-size: 13px; padding: 30px 20px; }
 </style>
 </head>
 <body>
 
-<h1>Gizlilik Politikası</h1>
-<p>Son güncelleme: 20 Mayıs 2026</p>
+<header>
+  <h1>Gizlilik Politikası</h1>
+  <p>Mirac-ı Nebi - Namaz Vakti Uygulaması &nbsp;|&nbsp; Son güncelleme: 20 Mayıs 2026</p>
+</header>
 
-<p>Bu gizlilik politikası, <strong>Mirac-ı Nebi - Namaz Vakti</strong> uygulamasının (bundan böyle "Uygulama" olarak anılacaktır) kullanıcı verilerini nasıl topladığını, kullandığını ve koruduğunu açıklamaktadır.</p>
+<div class="container">
 
-<h2>1. Toplanan Veriler</h2>
-<p>Uygulama aşağıdaki verileri toplayabilir:</p>
-<ul>
-  <li><strong>Konum Verisi:</strong> Namaz vakitlerini ve kıble yönünü hesaplamak için cihazınızın konum bilgisi kullanılır. Bu veri yalnızca cihazınızda işlenir, sunucularımıza iletilmez.</li>
-  <li><strong>Cihaz Tanımlayıcıları:</strong> Google AdMob reklam hizmeti aracılığıyla cihaz tanımlayıcıları toplanabilir.</li>
-  <li><strong>Kullanım Verileri:</strong> Uygulama içi etkileşim verileri reklam ve analitik amacıyla toplanabilir.</li>
-  <li><strong>Reklam Verisi:</strong> Google AdMob tarafından gösterilen reklamlara ilişkin veriler toplanabilir.</li>
-  <li><strong>Kilitlenme Verileri:</strong> Uygulama performansını iyileştirmek amacıyla kilitlenme raporları toplanabilir.</li>
-</ul>
+  <div class="card">
+    <h2>1. Giriş</h2>
+    <p>Bu Gizlilik Politikası, <strong>Mirac-ı Nebi - Namaz Vakti</strong> mobil uygulamasının (iOS ve Android) kullanıcı verilerini nasıl topladığını, işlediğini, sakladığını ve koruduğunu açıklamaktadır. Uygulamamızı kullanarak bu politikayı kabul etmiş olursunuz.</p>
+    <p>Geliştirici: <strong>Burak Balkı</strong> — <a href="mailto:brkbalki@gmail.com">brkbalki@gmail.com</a></p>
+  </div>
 
-<h2>2. Verilerin Kullanımı</h2>
-<p>Toplanan veriler şu amaçlarla kullanılır:</p>
-<ul>
-  <li>Namaz vakitleri ve kıble yönü hesaplama</li>
-  <li>Uygulama işlevselliğinin sağlanması</li>
-  <li>Üçüncü taraf reklamların gösterilmesi (Google AdMob)</li>
-  <li>Uygulama performansının iyileştirilmesi</li>
-</ul>
+  <div class="card">
+    <h2>2. Toplanan Veriler</h2>
+    <table>
+      <tr><th>Veri Türü</th><th>Açıklama</th><th>Amaç</th></tr>
+      <tr><td><strong>Konum (Yaklaşık)</strong></td><td>Cihazın yaklaşık GPS konumu</td><td>Namaz vakti hesaplama, kıble yönü belirleme</td></tr>
+      <tr><td><strong>Cihaz Tanımlayıcısı</strong></td><td>Reklam kimliği (IDFA/GAID)</td><td>Üçüncü taraf reklam gösterimi (Google AdMob)</td></tr>
+      <tr><td><strong>Kullanım Verisi</strong></td><td>Uygulama içi etkileşimler, ekran görüntülemeleri</td><td>Analitik, uygulama iyileştirme</td></tr>
+      <tr><td><strong>Reklam Verisi</strong></td><td>Görüntülenen reklamlar ve etkileşimler</td><td>Reklam performansı ölçümü</td></tr>
+      <tr><td><strong>Kilitlenme Raporu</strong></td><td>Uygulama hata ve kilitlenme logları</td><td>Teknik sorunları tespit etme ve düzeltme</td></tr>
+    </table>
+    <div class="highlight">⚠️ Konum verisi yalnızca cihazınızda işlenir. Namaz vakti hesaplaması için yalnızca şehir/ilçe bilgisi kullanılır; hassas GPS koordinatları sunucularımıza gönderilmez.</div>
+  </div>
 
-<h2>3. Üçüncü Taraf Hizmetler</h2>
-<p>Uygulama, aşağıdaki üçüncü taraf hizmetleri kullanmaktadır:</p>
-<ul>
-  <li><strong>Google AdMob:</strong> Reklam gösterimi için. Google'ın gizlilik politikasına <a href="https://policies.google.com/privacy" target="_blank">buradan</a> ulaşabilirsiniz.</li>
-  <li><strong>Diyanet İşleri Başkanlığı / emushaf.net:</strong> Namaz vakti verilerinin sağlanması için.</li>
-</ul>
+  <div class="card">
+    <h2>3. Verilerin Kullanım Amacı</h2>
+    <ul>
+      <li>Namaz vakitlerini ve kıble yönünü hesaplamak</li>
+      <li>Namaz vakti bildirimlerini zamanında göndermek</li>
+      <li>Ana ekran widget'ını güncellemek</li>
+      <li>Google AdMob aracılığıyla üçüncü taraf reklamlar göstermek</li>
+      <li>Uygulama performansını ölçmek ve iyileştirmek</li>
+      <li>Teknik hataları tespit edip düzeltmek</li>
+    </ul>
+  </div>
 
-<h2>4. Veri Güvenliği</h2>
-<p>Kullanıcı verilerinin güvenliğini sağlamak için uygun teknik önlemler alınmaktadır. Konum verisi yalnızca cihazınızda işlenir ve dışarıya iletilmez.</p>
+  <div class="card">
+    <h2>4. Üçüncü Taraf Hizmetler</h2>
+    <p>Uygulama aşağıdaki üçüncü taraf hizmetleri entegre etmektedir:</p>
+    <table>
+      <tr><th>Hizmet</th><th>Sağlayıcı</th><th>Amaç</th><th>Politika</th></tr>
+      <tr><td>Google AdMob</td><td>Google LLC</td><td>Reklam gösterimi</td><td><a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik</a></td></tr>
+      <tr><td>Namaz Vakti API</td><td>emushaf.net (Diyanet)</td><td>Resmi ezan vakti verisi</td><td>—</td></tr>
+      <tr><td>Nominatim</td><td>OpenStreetMap</td><td>Ters coğrafi kodlama (ilçe tespiti)</td><td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank">OSM Gizlilik</a></td></tr>
+      <tr><td>Aladhan API</td><td>IslamicFinder</td><td>Uluslararası namaz vakti verisi</td><td><a href="https://aladhan.com/privacy-policy" target="_blank">Aladhan Gizlilik</a></td></tr>
+    </table>
+    <p>Bu üçüncü taraf hizmetlerin kendi gizlilik politikaları bulunmaktadır. Bu hizmetlerin veri uygulamalarından biz sorumlu değiliz.</p>
+  </div>
 
-<h2>5. Çocukların Gizliliği</h2>
-<p>Uygulama, 13 yaşın altındaki çocuklardan bilerek kişisel veri toplamamaktadır.</p>
+  <div class="card">
+    <h2>5. Reklam ve Takip</h2>
+    <p>Uygulamamız Google AdMob reklam platformunu kullanmaktadır. AdMob, kişiselleştirilmiş reklamlar sunmak amacıyla cihaz tanımlayıcısı ve kullanım verisi toplayabilir.</p>
+    <ul>
+      <li><strong>iOS kullanıcıları:</strong> Uygulama Tracking Transparency (ATT) çerçevesi kapsamında uygulama başlatıldığında takip izni sorulabilir. İzni reddedebilirsiniz; bu durumda kişiselleştirilmemiş reklamlar gösterilir.</li>
+      <li><strong>Android kullanıcıları:</strong> Cihaz ayarlarından reklam kişiselleştirmeyi kapatabilirsiniz.</li>
+    </ul>
+  </div>
 
-<h2>6. Kullanıcı Hakları</h2>
-<p>Kullanıcılar, cihaz ayarlarından konum ve reklam takibi izinlerini istedikleri zaman kaldırabilir.</p>
+  <div class="card">
+    <h2>6. Veri Saklama ve Güvenlik</h2>
+    <p>Namaz vakti verileri cihazınızdaki yerel SQLite veritabanında saklanır. Kişisel verileriniz sunucularımızda tutulmaz.</p>
+    <p>Konum verisi: Hesaplama tamamlandıktan sonra uygulamanın belleğinde tutulmaz; disk veya ağ üzerine yazılmaz.</p>
+    <p>Teknik güvenlik önlemleri kapsamında tüm API iletişimi HTTPS/TLS üzerinden gerçekleştirilmektedir.</p>
+  </div>
 
-<h2>7. İletişim</h2>
-<p>Bu gizlilik politikasına ilişkin sorularınız için:<br>
-E-posta: <a href="mailto:brkbalki@gmail.com">brkbalki@gmail.com</a></p>
+  <div class="card">
+    <h2>7. Kullanıcı Hakları</h2>
+    <ul>
+      <li><strong>Konum iznini iptal etme:</strong> Cihaz ayarları → Uygulamalar → Mirac-ı Nebi → İzinler</li>
+      <li><strong>Bildirim iznini iptal etme:</strong> Cihaz ayarları → Bildirimler</li>
+      <li><strong>Reklam takibini devre dışı bırakma:</strong> iOS: Ayarlar → Gizlilik → Takip | Android: Ayarlar → Google → Reklamlar</li>
+      <li><strong>Verilere erişim veya silme talebi:</strong> <a href="mailto:brkbalki@gmail.com">brkbalki@gmail.com</a> adresine yazabilirsiniz.</li>
+    </ul>
+  </div>
 
-<h2>8. Politika Güncellemeleri</h2>
-<p>Bu gizlilik politikası zaman zaman güncellenebilir. Değişiklikler bu sayfada yayınlanacaktır.</p>
+  <div class="card">
+    <h2>8. Çocukların Gizliliği (COPPA)</h2>
+    <p>Uygulamamız 13 yaşın altındaki çocuklara yönelik değildir ve bu yaş grubundan bilerek kişisel veri toplamaz. Eğer çocuğunuzun veri paylaştığını fark ederseniz lütfen bizimle iletişime geçin.</p>
+  </div>
+
+  <div class="card">
+    <h2>9. GDPR — Avrupa Birliği Kullanıcıları</h2>
+    <p>AB'de ikamet eden kullanıcılar GDPR kapsamında aşağıdaki haklara sahiptir:</p>
+    <ul>
+      <li>Verilerinize erişim hakkı</li>
+      <li>Verilerinizin düzeltilmesini talep etme hakkı</li>
+      <li>Verilerinizin silinmesini talep etme hakkı ("unutulma hakkı")</li>
+      <li>Veri işlemeye itiraz etme hakkı</li>
+      <li>Veri taşınabilirliği hakkı</li>
+    </ul>
+    <p>Bu haklarınızı kullanmak için <a href="mailto:brkbalki@gmail.com">brkbalki@gmail.com</a> adresine yazabilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h2>10. Politika Güncellemeleri</h2>
+    <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinde bildirim olarak duyurulabilir. Güncel politikayı her zaman bu sayfada bulabilirsiniz.</p>
+  </div>
+
+  <div class="card">
+    <h2>11. İletişim</h2>
+    <p>Gizlilik politikamız hakkında soru veya talepleriniz için:</p>
+    <ul>
+      <li>E-posta: <a href="mailto:brkbalki@gmail.com">brkbalki@gmail.com</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Burak Balkı — Mirac-ı Nebi Namaz Vakti &nbsp;|&nbsp; Tüm hakları saklıdır.</p>
+</footer>
 
 </body>
 </html>
